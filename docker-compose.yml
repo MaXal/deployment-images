@@ -9,7 +9,7 @@ services:
      - ~/.ssh/id_rsa.pub:/home/jetbrains/.ssh/keys/id_rsa.pub:ro
     command: jetbrains:jetbrains:1001
   ftp:
-    image: wildscamp/vsftpd
+    build: ./ftp
     volumes:
       - /tmp:/home/virtual/jetbrains/share
     environment:
