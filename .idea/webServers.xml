@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="00516b3f-cd4f-48f4-a5fb-ebf875d287ed" name="ftp" url="http://localhost">
+        <fileTransfer host="localhost" port="21" rootFolder="/share">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="d5c43e63-7c5c-4fcd-9552-846f21808ee7" name="ftps" url="http://localhost">
+        <fileTransfer host="localhost" port="23" rootFolder="/share" accessType="FTPS">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="23" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="00255482-346f-4f6e-9705-4cb2f1dd369d" name="sftp" url="http://localhost">
+        <fileTransfer host="localhost" port="2022" rootFolder="/upload" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="2022" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
